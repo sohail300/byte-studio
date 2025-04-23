@@ -1,16 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import localFont from "next/font/local";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// Font files can be colocated inside of `pages`
+const monigueFont = localFont({
+  src: "./fonts/Monigue.otf",
+  variable: "--font-monigue",
+});
+const antonFont = localFont({
+  src: "./fonts/Anton.ttf",
+  variable: "--font-anton",
+});
+const ralewayFont = localFont({
+  src: "./fonts/Raleway.ttf",
+  variable: "--font-raleway",
+});
+const bebasNeueFont = localFont({
+  src: "./fonts/BebasNeue.ttf",
+  variable: "--font-bebas-neue",
+});
+const heinrichNeueFont = localFont({
+  src: "./fonts/Heinrich.ttf",
+  variable: "--font-heinrich",
 });
 
 export const metadata: Metadata = {
@@ -42,7 +55,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${monigueFont.variable} ${antonFont.variable} ${ralewayFont.variable} ${bebasNeueFont.variable} ${heinrichNeueFont.variable} antialiased scroll-smooth`}
       >
         {children}
       </body>
