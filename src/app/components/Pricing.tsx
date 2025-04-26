@@ -16,8 +16,9 @@ const PricingPlans: React.FC = () => {
             </div>
           </h1>
           <p className="text-center text-sm font-raleway text-primary font-light italic">
-            &quot;Get The Quality and Speed of Big Agencies at
-            <span className="font-semibold"> Best Prices</span>&quot;
+            &quot;
+            <span className="font-semibold">Top-Tier Speed and Quality, </span>
+            Without the Big Agency Costs.&quot;
           </p>
         </div>
 
@@ -31,14 +32,14 @@ const PricingPlans: React.FC = () => {
                     Launchpad Plan
                   </h1>
                   <div className="rounded-full whitespace-nowrap bg-accent text-xs text-black font-extrabold py-1 px-2 text-center">
-                    20% OFF
+                    40% OFF
                   </div>
                 </div>
                 <div className="flex items-end gap-3">
                   <h3 className="text-xl py-2 font-bold line-through text-neutral-500">
-                    $2499
+                    $499
                   </h3>
-                  <h3 className="text-4xl py-2 font-black">$1999</h3>
+                  <h3 className="text-4xl py-2 font-black">$299</h3>
                 </div>
               </div>
 
@@ -98,14 +99,14 @@ const PricingPlans: React.FC = () => {
                     Full Process Monthly Plan
                   </h1>
                   <div className="rounded-full whitespace-nowrap bg-black text-accent text-xs font-extrabold py-1 px-2 text-center">
-                    33% OFF
+                    44% OFF
                   </div>
                 </div>
                 <div className="flex items-end gap-3">
                   <h3 className="text-xl py-2 font-bold line-through text-neutral-800">
-                    $4499
+                    $899
                   </h3>
-                  <h3 className="text-4xl py-2 font-black text-black">$2999</h3>
+                  <h3 className="text-4xl py-2 font-black text-black">$499</h3>
                 </div>
               </div>
 
@@ -122,7 +123,6 @@ const PricingPlans: React.FC = () => {
                 </p>
                 <ul className="font-raleway font-bold flex flex-col gap-3 flex-grow text-black">
                   {[
-                    "1 Developer dedicated to your project.",
                     "One-of-a-kind crazy Lander design tailored to your brand.",
                     "High-quality, modern visuals.",
                     "Continuous Iterations",

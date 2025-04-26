@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-full flex flex-col items-center pb-10 pt-10 -mt-16">
+    <div className="relative w-full flex flex-col items-center pb-10 pt-0 mt-0">
       <div className="absolute -z-[1000] inset-0 grain-background"></div>
       <div className="max-w-screen-2xl w-full px-4 sm:px-12 flex flex-col items-center relative mx-auto overflow-clip">
         {/* Blob 1 */}
@@ -84,10 +84,10 @@ const HeroSection: React.FC = () => {
         <div className="mt-32 md:mt-16 text-center self-start w-full text-9xl lg:text-[185px] text-primary flex flex-col items-center font-monigue">
           <div className="flex flex-wrap leading-none gap-x-16 justify-center -z-30 w-full sm:w-fit">
             <p className="uppercase" style={{ opacity: 1, transform: "none" }}>
-              Design
+              Imagine
             </p>
             <p className="uppercase" style={{ opacity: 1, transform: "none" }}>
-              Develop
+              Build
             </p>
           </div>
           <div
@@ -95,7 +95,7 @@ const HeroSection: React.FC = () => {
             style={{ opacity: 1, transform: "translateY(-25%) rotate(-6deg)" }}
           >
             <p className="uppercase leading-none translate-y-1 lg:translate-y-3">
-              Deploy
+              Launch
             </p>
           </div>
         </div>
@@ -107,14 +107,16 @@ const HeroSection: React.FC = () => {
             style={{ opacity: 1, transform: "none" }}
           >
             <p className="font-raleway font-regular text-[#aeaeae] md:w-3/5 md:text-start text-center text-sm md:text-md">
-              No fluff, no jargon, just clean, elegant code and designs that
-              pop. Get your own{" "}
+              No noise. Just pixel-perfect designs and flawless code.{" "}
               <span className="text-accent font-bold italic">
-                custom digital solution
+                Start your project today.
               </span>{" "}
-              right now !
             </p>
-            <a target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://cal.com/bytestudio/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="flex gap-1 uppercase items-center rounded-full text-primary border-primary border-2 px-8 py-1 text-xl hover:bg-primary hover:text-black transition-colors select-none mt-4">
                 <p className="translate-y-[0.5px] mx-8 font-monigue">
                   Book a Call
@@ -129,20 +131,15 @@ const HeroSection: React.FC = () => {
           >
             <div className="text-4xl relative hidden md:block font-monigue">
               <div className="absolute inset-0 w-full h-[96] border-[2px] border-[#d4cbb5] rounded-[100%] -rotate-6 scale-x-[1.2] scale-y-[0.6] translate-y-[-30px] -z-10 pointer-events-none opacity-80"></div>
-
               <span className="whitespace-nowrap">
-                You <span className="text-accent">think</span> it, we{" "}
-                <span className="text-accent">ship</span> it
+                Your <span className="text-accent">Ideas</span>, Our{" "}
+                <span className="text-accent">Code</span>
               </span>
             </div>
             <div className="uppercase text-3xl mt-12 font-anton flex md:flex-col gap-6 items-center md:items-start">
               <p className="text-xl flex flex-col md:flex-row items-center md:items-end gap-x-2">
-                <span className="text-5xl">22+</span>
-                <span className="text-[#c6c6c6]">Ideas shipped</span>
-              </p>
-              <p className="text-xl flex flex-col md:flex-row items-center md:items-end gap-x-2">
-                <span className="text-5xl">48+</span>
-                <span className="text-[#c6c6c6]">Designs shipped</span>
+                <span className="text-5xl">5+</span>
+                <span className="text-[#c6c6c6]">Services provided</span>
               </p>
             </div>
           </div>

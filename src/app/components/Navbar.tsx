@@ -1,9 +1,48 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import Image from "next/image";
+import { useRef } from "react";
+import Lenis from "lenis";
 
 const Navbar: React.FC = () => {
+  const lenis = useRef<Lenis | null>(null);
+
+  useEffect(() => {
+    // Initialize Lenis
+    lenis.current = new Lenis({
+      duration: 0.6, // Control the duration of the scroll
+      easing: (t) => 1 - Math.pow(1 - t, 3), // Cubic easing for smooth stop
+    });
+
+    const animate = (time: number): void => {
+      if (lenis.current) {
+        lenis.current.raf(time);
+      }
+      requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+
+    // Cleanup on unmount
+    return () => {
+      if (lenis.current) {
+        lenis.current.destroy();
+      }
+    };
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    console.log(element);
+    console.log(lenis.current);
+    if (lenis.current && element) {
+      lenis.current.scrollTo(element);
+    }
+  };
+
   return (
-    <div className="w-full z-50 text-primary text-2xl h-18 flex items-center bg-transparent">
+    <div className="w-full z-50 text-primary text-2xl h-18 flex items-center bg-transparent border-b-2 border-[#1e1e1e]">
       <nav className="flex justify-between items-stretch px-4 sm:px-12 w-full">
         <a className="lg:px-4 cursor-pointer select-none" href="#top">
           <div className="flex items-center gap-4 h-8 md:h-10 my-4">
@@ -19,27 +58,27 @@ const Navbar: React.FC = () => {
         </a>
 
         <div className="items-stretch hidden lg:flex font-monigue w-fit">
-          <a
-            className="flex items-center justify-center px-8 hover:text-accent transition-colors uppercase"
-            href="#work"
+          <button
+            className="flex items-center justify-center px-8 hover:text-accent transition-colors uppercase cursor-pointer"
+            onClick={() => scrollToSection("work")}
           >
-            Our Work
-          </a>
-          <a
-            className="flex items-center justify-center px-8 hover:text-accent transition-colors uppercase"
-            href="#services"
+            Works
+          </button>
+          <button
+            className="flex items-center justify-center px-8 hover:text-accent transition-colors uppercase cursor-pointer"
+            onClick={() => scrollToSection("services")}
           >
             Services
-          </a>
+          </button>
           <a
-            className="flex items-center justify-center px-8 hover:text-accent transition-colors uppercase"
-            href="#faq"
+            className="flex items-center justify-center px-8 hover:text-accent transition-colors uppercase cursor-pointer"
+            onClick={() => scrollToSection("faq")}
           >
             FAQ
           </a>
           <a
-            className="flex items-center justify-center px-8 hover:text-accent transition-colors uppercase"
-            href="#contact"
+            className="flex items-center justify-center px-8 hover:text-accent transition-colors uppercase cursor-pointer"
+            onClick={() => scrollToSection("contact")}
           >
             Contact
           </a>
@@ -47,7 +86,7 @@ const Navbar: React.FC = () => {
 
         <div className="items-center hidden lg:flex">
           <a
-            href="https://cal.com/dotpro-labs/30min"
+            href="https://cal.com/bytestudio/30min"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -21,12 +21,12 @@ const ContactSection: React.FC = () => {
           {/* Left Column */}
           <div className="flex flex-col items-center md:items-start select-none">
             <a
-              href="https://cal.com/dotpro-labs/30min"
+              href="https://cal.com/bytestudio/30min"
               target="_blank"
               rel="noopener noreferrer"
             >
               <button className="px-6 py-2 text-lg font-raleway font-black rounded-full bg-accent uppercase hover:text-white transition-all cursor-pointer">
-                book free call
+                Book free call
               </button>
             </a>
 
@@ -54,8 +54,8 @@ const ContactSection: React.FC = () => {
           {/* Right Column */}
           <div className="flex flex-col items-center justify-center md:items-end">
             <p className="text-center md:text-right font-raleway font-bold w-3/5 italic">
-              &quot;We are not just code ninjas; we are bug whisperers and pixel
-              perfectionists for whatever the quote goes&quot;
+              &quot;We don&apos;t just write code → we tame bugs and perfect
+              pixels.&quot;
             </p>
 
             <div className="font-anton text-center md:text-right text-xl gap-1 flex flex-col mt-4">
@@ -72,7 +72,7 @@ const ContactSection: React.FC = () => {
                 FAQs
               </a>
               <a
-                href="https://cal.com/dotpro-labs/30min"
+                href="https://cal.com/bytestudio/30min"
                 className="hover:text-accent transition-colors "
                 target="_blank"
                 rel="noopener noreferrer"
@@ -83,7 +83,7 @@ const ContactSection: React.FC = () => {
 
             <div className="flex gap-4 mt-4">
               <a
-                href="mailto:dotprolabs@gmail.com"
+                href="mailto:bytestudioagency@gmail.com"
                 className="inline-flex items-center hover:opacity-80 transition-opacity"
                 aria-label="Send email to dotprolabs@gmail.com"
               >
@@ -91,18 +91,14 @@ const ContactSection: React.FC = () => {
               </a>
 
               <a
-                href="https://x.com/dotprolabs"
+                href="https://x.com/bytestudioagcy"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Twitter width={32} height={32} strokeWidth={2} />
               </a>
 
-              <a
-                href="https://www.linkedin.com/company/dotpro-labs/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a target="_blank" rel="noopener noreferrer">
                 <svg
                   width="32"
                   height="32"

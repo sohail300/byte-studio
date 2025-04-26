@@ -22,12 +22,12 @@ const FAQSection: React.FC = () => {
         className="w-full text-center font-raleway text-primary font-light"
         style={{ opacity: 1, transform: "none" }}
       >
-        FAQ Attack! The Answers You`&apos;ve Been Secretly Wondering About!
+        FAQ Attack! Everything You Wanted to Know (But Didn&apos;t Ask).
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-6 xl:grid-cols-12 gap-8 mt-10 w-full text-[#ECECEC] [&_span]:font-semibold [&_span]:text-[#ECECEC]">
         {/* Why Us Section */}
-        <div className="w-full md:row-span-2 md:col-span-6 flex flex-col xl:flex-row items-center gap-8 relative rounded-lg overflow-clip py-16 px-4 md:px-12 text-center xl:text-left">
+        <div className="w-full md:row-span-2 md:col-span-8 flex flex-col xl:flex-row items-center gap-8 relative rounded-lg overflow-clip py-16 px-4 md:px-12 text-center xl:text-left">
           <Image
             alt=""
             src="/faq/faq-bg-why.webp"
@@ -49,25 +49,24 @@ const FAQSection: React.FC = () => {
           <p className="font-anton text-accent text-9xl uppercase">Why Us</p>
           <div className="font-raleway md:w-4/5 flex flex-col gap-4">
             <p className="text-lg">
-              Our work speaks for itself. We&apos;re a team of product builders
-              and design fanatics who bring your digital dreams to life—minus
-              the <span>coding nightmares</span>.
+              Our work speaks louder than words. We&apos;re a team of product
+              builders and design enthusiasts, turning your digital dreams into
+              reality — without the usual <span>coding nightmares</span>.
             </p>
             <p className="text-lg">
               We{" "}
               <span>
-                analyze, research, and select the best tech and design for your
-                product
+                dive deep into research, strategy, and technology, carefully
+                selecting the best tools
               </span>
-              , refining it through every iteration.
+              and refining every detail through thoughtful iteration.
             </p>
           </div>
         </div>
-
         {/* Who is the team Section */}
-        <div className="w-full md:row-span-2 md:col-span-3 flex flex-col items-center gap-8 relative rounded-lg overflow-clip py-16 px-4 md:px-12">
+        <div className="w-full md:row-span-2 md:col-span-4 flex flex-col items-center gap-8 relative rounded-lg overflow-clip py-16 px-4 md:px-12">
           <p className="font-anton text-accent text-6xl uppercase text-center">
-            Who is the team
+            Who&apos;s Behind Byte Studio?
           </p>
           <Image
             alt=""
@@ -89,13 +88,13 @@ const FAQSection: React.FC = () => {
           />
 
           <p className="text-center md:text-start font-raleway">
-            <span>Top Talent</span> with 5+ years of experience in building
-            products
+            Senior-level developers and designers, trusted by startups and
+            enterprises alike.
           </p>
         </div>
 
         {/* wiLL yOu gHoSt uS? Section */}
-        <div className="w-full md:row-span-1 md:col-span-3 flex flex-col items-center gap-8 relative rounded-lg overflow-clip py-16 px-4 md:px-12">
+        <div className="w-full md:row-span-2 md:col-span-4 flex flex-col items-center gap-8 relative rounded-lg overflow-clip py-16 px-4 md:px-12">
           <Image
             alt=""
             src="/faq/faq-bg-ghost.webp"
@@ -119,16 +118,17 @@ const FAQSection: React.FC = () => {
           </p>
           <div className="font-raleway">
             <p className="text-center md:text-start text-lg">
-              Ask our <span>20+</span> previous clients and you will know ;)
+              Ask our <span>20+</span> previous clients — they&apos;ll tell you.
+              😉
             </p>
             <p className="text-[#6F6F6F] text-end font-raleway text-sm mt-4">
-              Hint : We believe in client relations
+              Hint : we believe in building real, lasting client relationships.
             </p>
           </div>
         </div>
 
         {/* Pricing Section */}
-        <div className="w-full md:row-span-3 md:col-span-3 flex flex-col items-center gap-8 relative rounded-lg overflow-clip py-16 px-8 md:px-12">
+        <div className="w-full md:row-span-2 md:col-span-8 flex flex-col items-center gap-8 relative rounded-lg overflow-clip py-16 px-8 md:px-12">
           <Image
             alt=""
             src="/faq/faq-bg-cash.webp"
@@ -153,28 +153,29 @@ const FAQSection: React.FC = () => {
           <div className="font-raleway">
             <div>
               <p className="text-lg">
-                First, we dive into your project to map out your needs and the
-                unique requirements. From there, we offer two flexible payment
+                First, we dive deep into your project to understand your needs
+                and unique requirements. Then, we offer two flexible payment
                 options:
               </p>
               <ol className="decoration list-decimal [&_span]:text-primary my-4">
                 <li>
-                  <span>Project-based payment:</span> Pay 50% upfront and 50% on
+                  <span>Project-Based:</span> Pay 50% upfront and 50% upon
                   completion.
                 </li>
                 <li className="mt-2">
-                  <span>Monthly payments:</span> A steady, ongoing payment plan
-                  until your project is complete. Book a call or mail us to
-                  discuss more
+                  <span>Monthly Plan:</span> Spread the cost with steady monthly
+                  payments until your project is complete.
                 </li>
               </ol>
-              <p className="text-lg">Book a call or mail us to discuss more</p>
+              <p className="text-lg">
+                Book a call or mail us — we&apos;ll tailor a plan that fits you.
+              </p>
             </div>
           </div>
         </div>
 
         {/* We are hiring! Section */}
-        <div className="w-full md:row-span-2 md:col-span-3 xl:col-span-5 flex flex-col items-center gap-8 relative rounded-lg overflow-clip py-16 px-4 md:px-12">
+        {/* <div className="w-full md:row-span-2 md:col-span-3 xl:col-span-5 flex flex-col items-center gap-8 relative rounded-lg overflow-clip py-16 px-4 md:px-12">
           <Image
             alt=""
             src="/faq/faq-bg-colors.webp"
@@ -204,10 +205,9 @@ const FAQSection: React.FC = () => {
               will add you into our network . Cheers !!
             </p>
           </div>
-        </div>
-
+        </div> */}
         {/* Tech used Section */}
-        <div className="w-full md:row-span-2 md:col-span-6 xl:col-span-4 flex flex-col items-center gap-8 relative rounded-lg overflow-clip py-16 px-4 md:px-12">
+        {/* <div className="w-full md:row-span-2 md:col-span-6 xl:col-span-4 flex flex-col items-center gap-8 relative rounded-lg overflow-clip py-16 px-4 md:px-12">
           <Image
             alt=""
             src="/faq/faq-bg-tech.webp"
@@ -240,7 +240,7 @@ const FAQSection: React.FC = () => {
               Solidity, Tailwind, Next, Vue, Wordpress, Shopify, Flutter
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

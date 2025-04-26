@@ -108,7 +108,7 @@ const Services: React.FC = () => {
               solutions that transform your{" "}
               <span className="font-semibold">vision into reality</span>
             </p>
-            <a href="https://cal.com/dotpro-labs/30min" target="_blank">
+            <a href="https://cal.com/bytestudio/30min" target="_blank">
               <button className="py-2 px-6 rounded-full bg-black text-[#B5F0DC] uppercase font-anton cursor-pointer">
                 Book a call
               </button>
@@ -127,7 +127,7 @@ const Services: React.FC = () => {
               solutions that transform your{" "}
               <span className="font-semibold">vision into reality</span>
             </p>
-            <a href="https://cal.com/dotpro-labs/30min" target="_blank">
+            <a href="https://cal.com/bytestudio/30min" target="_blank">
               <button className="py-2 px-6 rounded-full bg-black text-[#B5F0DC] uppercase font-anton cursor-pointer">
                 Book a call
               </button>
