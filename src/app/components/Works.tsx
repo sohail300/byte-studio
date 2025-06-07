@@ -5,7 +5,6 @@ interface ProjectCardProps {
   title: string;
   description: string;
   imageSrc: string;
-  href: string;
   tags: string[];
   index: number;
 }
@@ -14,7 +13,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   imageSrc,
-  href,
   tags,
   index,
 }) => {
@@ -119,7 +117,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </motion.div>
 
       <motion.a
-        href={href}
         className="font-raleway bg-[#95959516] hover:bg-[#c2c2c26c] backdrop-blur-lg rounded-lg py-4 text-primary w-full mt-4 flex items-center justify-between px-8 transition-colors"
         whileHover={{
           scale: 1.02,
@@ -193,52 +190,32 @@ const Works: React.FC = () => {
 
   const projects = [
     {
-      title: "SkillSetMaster Course",
+      title: "HRMS Platform for Sociolinq",
       description:
-        "Modern Landing Pages for Famous Influencer Aryan Singh Course website",
-      imageSrc: "/projects/more/skillsetmaster.png",
-      href: "/work/skillsetmaster",
-      tags: ["Vite React", "Figma", "Modern"],
+        "Modern HRMS platform with a responsive React frontend, FastAPI backend and PostgreSQL database, covering employee profiles, attendance, and leave management.",
+      imageSrc: "/works/sociolinq.png",
+      tags: ["React", "TailwindCSS", "FastAPI", "PostgreSQL", "MUI"],
     },
     {
-      title: "Refer It",
+      title: "Career Charcha Website",
       description:
-        "A fully comhrehensive application that helps to get the best deals and offers on the gaming community",
-      imageSrc: "/projects/more/referit.png",
-      href: "/work/referit",
-      tags: ["NextJS", "Supabase", "Stripe"],
+        "Career Charcha's website with React and Express, improving performance and integrating Google Sheets for form data capture.",
+      imageSrc: "/works/careercharcha.png",
+      tags: ["React", "Express", "Google Sheets API"],
     },
     {
-      title: "Oktogram",
+      title: "Streeya Website UI/UX Design",
       description:
-        "A decentralised social media and giveaway platoform build for solana and polygon with tokenized awards system and like based automated giveaways",
-      imageSrc: "/projects/oktogramnew.png",
-      href: "/work/oktogram",
-      tags: ["Next.js", "Smart Contracts", "Polygon"],
+        "Designed 50+ web pages with a strong brand identity and a responsive layout for seamless multi-device user experience.",
+      imageSrc: "/works/streeya.png",
+      tags: ["UI/UX", "Figma", "Responsive Design"],
     },
     {
-      title: "MAMC Attendance Portal",
+      title: "Webyapar Website",
       description:
-        "A web attendance portal ported into a PWA for multi-purpose use by the students of Indian Medical College MAMC",
-      imageSrc: "/projects/mamc.png",
-      href: "/work/mamc",
-      tags: ["Vite React", "Trpc", "PWA"],
-    },
-    {
-      title: "Telegram Bots",
-      description:
-        "Collection of automated Telegram bots for various utilities and tasks including AI automataion, crypto trading, and more",
-      imageSrc: "/projects/tg-bots.png",
-      href: "/work/tg-bots",
-      tags: ["Python", "Telegram API", "Docker"],
-    },
-    {
-      title: "Crokto",
-      description:
-        "Crokto is a decentralized Web3 platform revolutionizing online learning. Built on Next.js and Polygon, Crokto allows educators to create, sell, and manage courses on a secure, blockchain-powered marketplace",
-      imageSrc: "/projects/crokto.png",
-      href: "/work/crokto",
-      tags: ["Vue.js", "IPFS", "Okto Auth"],
+        "Delivered a static, responsive website using HTML5, CSS3, JavaScript, and Bootstrap tailored to client needs.",
+      imageSrc: "/works/webyapar.png",
+      tags: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
     },
   ];
 
@@ -329,7 +306,6 @@ const Works: React.FC = () => {
               title={project.title}
               description={project.description}
               imageSrc={project.imageSrc}
-              href={project.href}
               tags={project.tags}
               index={index}
             />
