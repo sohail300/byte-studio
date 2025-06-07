@@ -108,7 +108,7 @@ const Services: React.FC = () => {
               solutions that transform your{" "}
               <span className="font-semibold">vision into reality</span>
             </p>
-            <a href="https://cal.com/bytestudio/30min" target="_blank">
+            <a href="https://links.heysohail.xyz/byte-studio" target="_blank">
               <button className="py-2 px-6 rounded-full bg-black text-[#B5F0DC] uppercase font-anton cursor-pointer">
                 Book a call
               </button>
@@ -116,7 +116,7 @@ const Services: React.FC = () => {
           </div>
         </AccordionItem>
 
-        <AccordionItem index={5} title="UI/UX" bgColor="#1CA57A">
+        <AccordionItem index={3} title="UI/UX" bgColor="#1CA57A">
           <div className="w-full items-center relative pb-4 pt-0 px-8 flex flex-col lg:flex-row justify-between mt-4 md:mt-16 text-black">
             <p className="text-center lg:text-start lg:w-3/5 pb-4 text-lg md:text-2xl">
               From <span className="font-semibold"> enterprise-scale </span>{" "}
@@ -127,7 +127,7 @@ const Services: React.FC = () => {
               solutions that transform your{" "}
               <span className="font-semibold">vision into reality</span>
             </p>
-            <a href="https://cal.com/bytestudio/30min" target="_blank">
+            <a href="https://links.heysohail.xyz/byte-studio" target="_blank">
               <button className="py-2 px-6 rounded-full bg-black text-[#B5F0DC] uppercase font-anton cursor-pointer">
                 Book a call
               </button>

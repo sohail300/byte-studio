@@ -3,16 +3,26 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-export default function Loader() {
+interface LoaderProps {
+  onLoadingComplete?: () => void;
+}
+
+export default function Loader({ onLoadingComplete }: LoaderProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
+      // Notify parent that loading is complete
+      if (onLoadingComplete) {
+        setTimeout(() => {
+          onLoadingComplete();
+        }, 500); // Wait for loader fade out animation
+      }
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [onLoadingComplete]);
 
   return (
     <div

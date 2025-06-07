@@ -21,7 +21,7 @@ const ContactSection: React.FC = () => {
           {/* Left Column */}
           <div className="flex flex-col items-center md:items-start select-none">
             <a
-              href="https://cal.com/bytestudio/30min"
+              href="https://links.heysohail.xyz/byte-studio"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,7 +72,7 @@ const ContactSection: React.FC = () => {
                 FAQs
               </a>
               <a
-                href="https://cal.com/bytestudio/30min"
+                href="https://links.heysohail.xyz/byte-studio"
                 className="hover:text-accent transition-colors "
                 target="_blank"
                 rel="noopener noreferrer"

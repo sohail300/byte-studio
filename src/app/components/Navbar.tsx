@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
 
         <div className="items-center hidden lg:flex">
           <a
-            href="https://cal.com/bytestudio/30min"
+            href="https://links.heysohail.xyz/byte-studio"
             target="_blank"
             rel="noopener noreferrer"
           >
